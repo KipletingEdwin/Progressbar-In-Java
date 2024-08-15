@@ -11,8 +11,6 @@ public class ProgressBarDemo {
         bar.setBounds(0,0,420,50);
         bar.setStringPainted(true);
 
-
-
         frame.add(bar);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,420);
@@ -23,7 +21,17 @@ public class ProgressBarDemo {
     }
 
     public  void  fill(){
-        bar.setValue(10);
+        int counter = 0;
+
+        while (counter<=100){
+            bar.setValue(counter);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            counter +=10;
+        }
     }
 
 
