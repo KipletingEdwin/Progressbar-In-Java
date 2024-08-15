@@ -26,12 +26,13 @@ public class ProgressBarDemo {
         while (counter<=100){
             bar.setValue(counter);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(50);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            counter +=10;
+            counter +=1;
         }
+        bar.setString("Done! :");
     }
 
 
