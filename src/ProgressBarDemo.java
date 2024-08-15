@@ -13,6 +13,7 @@ public class ProgressBarDemo {
         bar.setStringPainted(true);
         bar.setFont(new Font("MV Boli", Font.BOLD,25));
         bar.setForeground(Color.red);
+        bar.setBackground(Color.black);
 
         frame.add(bar);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
