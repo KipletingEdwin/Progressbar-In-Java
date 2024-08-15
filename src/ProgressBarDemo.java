@@ -6,6 +6,11 @@ public class ProgressBarDemo {
     JProgressBar bar = new JProgressBar();
 
     ProgressBarDemo(){
+
+        bar.setValue(0);
+        bar.setBounds(0,0,420,50);
+
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,420);
         frame.setLayout(null);
